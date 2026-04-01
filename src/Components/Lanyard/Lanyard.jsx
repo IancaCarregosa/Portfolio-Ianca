@@ -159,7 +159,7 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile }) {
               drag(new THREE.Vector3().copy(e.point).sub(vec.copy(card.current.translation())))
             )}
           >
-            <mesh geometry={nodes.card.geometry}>
+            {/*<mesh geometry={nodes.card.geometry}>
               <meshPhysicalMaterial
                 map={materials.base.map}
                 map-anisotropy={16}
@@ -170,7 +170,7 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile }) {
               />
             </mesh>
             <mesh geometry={nodes.clip.geometry} material={materials.metal} material-roughness={0.3} />
-            <mesh geometry={nodes.clamp.geometry} material={materials.metal} />
+            <mesh geometry={nodes.clamp.geometry} material={materials.metal} />*/}
           </group>
         </RigidBody>
       </group>
