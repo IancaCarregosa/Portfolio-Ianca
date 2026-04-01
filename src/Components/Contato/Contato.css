@@ -1,0 +1,72 @@
+.boxContato {
+    background-image: url(src/assets/boxContato.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    width: 100%;
+    padding: 100px 1px;
+    text-align: center;
+}
+
+.title {
+    margin-top: 0;
+}
+
+.boxContato ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 60px;
+}
+
+li {
+    width: 80px;
+}
+
+li img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.contato {
+    padding: 50px 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .contato {
+        padding: 20px 1rem;
+    }
+
+    .boxContato {
+        max-width: 100%;
+        padding: 60px 0px;
+        background-image: url(src/assets/boxContato.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin: 0 auto;
+    }
+
+    .titleContato img {
+        width: 30vw;
+        margin-top: 5px;
+        margin-bottom: 10px
+    }
+
+    .boxContato ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    li {
+        width: 40px;
+        margin-bottom: 20px;
+    }
+}

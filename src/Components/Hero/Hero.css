@@ -1,0 +1,71 @@
+.hero {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  margin: 8rem;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.txt h1 {
+  margin-left: 50px;
+  white-space: nowrap;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  margin-top: 3em;
+}
+
+.txt h1 .text-type {
+  min-width: 30ch;
+  white-space: normal;
+  text-align: left;
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.txt {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    width: 50%;
+    margin: 0;
+    padding: 1.2rem;
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+
+  .hero img {
+    width: 60vw;
+    max-width: 400px;
+  }
+
+  .txt h1 {
+    font-size: clamp(0.85rem, 4vw, 1.2rem);
+    white-space: normal;
+    margin-top: 1.2em;
+    margin-left: 0 !important;
+  }
+
+  .txt h1 .text-type {
+    min-width: unset;
+    font-size: inherit;
+    white-space: nowrap;      /* impede quebra de linha durante digitação */
+    display: block;           /* ancora à esquerda */
+    overflow: hidden;         /* corta se passar da borda */
+  }
+
+  .txt {
+    text-align: left;
+    width: 100%;
+  }
+}

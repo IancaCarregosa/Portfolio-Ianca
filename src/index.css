@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #090909;
+  color: #fff;
+  font-family: Poppins;
+}
+
+.home-section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    height: 100svh;
+    overflow: visible;
+  }
+}

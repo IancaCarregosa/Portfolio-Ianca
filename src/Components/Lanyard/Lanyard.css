@@ -1,0 +1,25 @@
+.lanyard-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  overflow: visible !important;
+  pointer-events: none;
+}
+
+.lanyard-wrapper canvas {
+  pointer-events: all;
+}
+
+@media (max-width: 768px) {
+  .lanyard-wrapper {
+    width: 100vw;
+    height: 100vh;    /* volta para 100vh para a tira tocar o topo */
+    left: auto;
+    right: 0;
+    top: 0;
+    z-index: 999; 
+  }
+}
