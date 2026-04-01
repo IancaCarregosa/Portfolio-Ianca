@@ -2,7 +2,6 @@ import React from 'react'
 import './Hero.css'
 import hero from '../../assets/hero.svg'
 import TextType from '../TextType/TextType';
-import { Break } from 'three/tsl';
 
 const Hero = () => {
   return (
