@@ -1,5 +1,6 @@
 import projetoArquiteto_img from '../assets/projetoTaylor.png'
 import projetoQuartoEscuro_img from '../assets/projetoQuartoEscuro.png'
+import projetoPublicitario_img from '../assets/projetoPP.png'
 import html from '../assets/html.svg'
 import css from '../assets/css.svg'
 import js from '../assets/js.svg'
@@ -32,6 +33,17 @@ const projetos_data = [
         p_demo: "https://taylorguinsberg.github.io/portfolio/index.html",
         p_techs: [
             html, css, js, figma
+        ]
+    },
+    {
+        p_no: 3, 
+        p_name: "Portfólio Publicitário", 
+        p_img: projetoPublicitario_img, 
+        p_desc: "Desenvolvimento de um Portfólio responsivo para um publicitário fictício, contém modo escuro e modo claro.",
+        p_github: "https://github.com/IancaCarregosa/PortfolioPublicitario",
+        p_demo: "https://gabriel-rocha-beta.vercel.app/",
+        p_techs: [
+            html, css, js, figma, bootstrap
         ]
     },
      
