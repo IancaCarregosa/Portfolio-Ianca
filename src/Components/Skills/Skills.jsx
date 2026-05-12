@@ -1,6 +1,8 @@
 import React from 'react'
 import './Skills.css'
-import title from '../../assets/titleSkills.svg'
+import titlePT from '../../assets/titleSkills.svg'
+import titleEN from '../../assets/titleSkillsENG.svg'
+import { useTranslation } from 'react-i18next'
 import html from '../../assets/html.svg'
 import css from '../../assets/css.svg'
 import js from '../../assets/js.svg'
@@ -18,33 +20,38 @@ import tailwind from '../../assets/tailwind.svg'
 
 
 const Skills = () => {
+  const { i18n } = useTranslation()
+
+  const isPT = i18n.language.startsWith('pt')
+
   return (
     <div className="skills">
-        <div className="title">
-            <img src={title} alt="" srcset="" />
+      <div className="title">
+        <img src={isPT ? titlePT : titleEN} alt="Skills title" />
+      </div>
+
+      <div className="habilidades">
+        <div className="skills1">
+          <img src={html} alt="" />
+          <img src={css} alt="" />
+          <img src={js} alt="" />
+          <img src={reactJS} alt="" />
+          <img src={wp} alt="" />
+          <img src={php} alt="" />
+          <img src={reactNative} alt="" />   
         </div>
-        <div className="habilidades">
-            <div className="skills1">
-            <img src={html} alt="" srcset="" />
-            <img src={css} alt="" srcset="" />
-            <img src={js} alt="" srcset="" />
-            <img src={reactJS} alt="" srcset="" />
-            <img src={wp} alt="" srcset="" />
-            <img src={php} alt="" srcset="" />
-            <img src={reactNative} alt="" srcset="" />   
-            </div>
-            <div className="skills2">
-            <img src={bootstrap} alt="" srcset="" />
-            <img src={figma} alt="" srcset="" />
-            <img src={sql} alt="" srcset="" />
-            <img src={python} alt="" srcset="" />
-            <img src={powerBI} alt="" srcset="" />
-            <img src={ts} alt="" srcset="" />
-            <img src={tailwind} alt="" srcset="" />  
-            </div>
+
+        <div className="skills2">
+          <img src={bootstrap} alt="" />
+          <img src={figma} alt="" />
+          <img src={sql} alt="" />
+          <img src={python} alt="" />
+          <img src={powerBI} alt="" />
+          <img src={ts} alt="" />
+          <img src={tailwind} alt="" />  
         </div>
+      </div>
     </div>
-    
   )
 }
 
