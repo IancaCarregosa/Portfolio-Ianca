@@ -14,10 +14,13 @@
     "@react-three/fiber": "^9.3.0",
     "@react-three/rapier": "^2.1.0",
     "gsap": "^3.13.0",
+    "i18next": "^26.1.0",
+    "lucide-react": "^1.14.0",
     "meshline": "^3.3.1",
     "react": "^19.1.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^19.1.1",
+    "react-i18next": "^17.0.7",
     "three": "^0.180.0"
   },
   "devDependencies": {

@@ -1,13 +1,18 @@
 import React from 'react'
 import './Projetos.css'
-import title from '../../assets/titleProjetos.svg'
+import titlePT from '../../assets/titleProjetos.svg'
+import titleENG from '../../assets/titleProjetosENG.svg'
 import projetos_data from '../../assets/projetos_data'
+import { useTranslation } from 'react-i18next'
 
 const Projetos = () => {
+    const { t, i18n } = useTranslation()
+    const isPT = i18n.language.startsWith('pt')
+
     return (
         <div className="projetos">
             <div className="titleP">
-                <img src={title} alt="Título da seção Projetos" /> 
+                <img src={isPT ? titlePT : titleENG} alt="Project title" />
             </div>
             
             <div className="projetos-container">
@@ -23,7 +28,7 @@ const Projetos = () => {
                                 />
                                 
                                 <div className="projeto-info">
-                                    <p>{projeto.p_desc}</p> 
+                                    <p>{t(projeto.p_desc)}</p>
                                     
                                     <div className="projeto-techs-icons">
                                         {projeto.p_techs && projeto.p_techs.map((TechPath, techIndex) => (
@@ -35,19 +40,19 @@ const Projetos = () => {
 
                                     <div className="projeto-links">
                                         <a href={projeto.p_github} target="_blank" rel="noopener noreferrer">
-                                            Repositório
+                                            {t('projects.repo')}
                                         </a>
                                         
                                         {projeto.p_demo && (
                                             <a href={projeto.p_demo} target="_blank" rel="noopener noreferrer">
-                                                Ver Projeto
+                                                {t('projects.demo')}
                                             </a>
                                         )}
                                     </div>
                                 </div>
                             </div>
 
-                            <h3 className="projeto-titulo">{projeto.p_name}</h3>
+                            <h3 className="projeto-titulo">{t(projeto.p_name)}</h3>
                         </div>
                     )
                 })}

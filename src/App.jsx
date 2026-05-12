@@ -12,7 +12,7 @@ const App = () => {
     <>
       <Navbar/>
       <section id="home">
-        <Lanyard position={[0, 0, 12]} gravity={[0, -40, 0]} />
+        {/*<Lanyard position={[0, 0, 12]} gravity={[0, -40, 0]} />*/}
         <Hero/>
       </section>
       <section id="sobre">
